@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="caf_system"
+          fetch="https://source.codeaurora.org/quic/la"
+          review="codeaurora.org"
+          revision="refs/tags/LA.QSSI.12.0.r1-06300-qssi.0" />
+
+  <remote name="caf_vendor"
+          fetch="https://source.codeaurora.org/quic/la"
+          review="codeaurora.org"
+          revision="refs/tags/LA.UM.9.12.r1-14000-SMxx50.0" />
+
+  <!-- CAF System -->
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" remote="caf_system">
+    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/generate_vendor_bundle.mk" src="image_generation_tool/generate_vendor_bundle.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/image_generation_tool_product.mk" src="image_generation_tool/config/image_generation_tool_product.mk" />
+    <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk" />
+    <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk" />
+  </project>
+  <project path="device/qcom/qssi" name="device/qcom/qssi" remote="caf_system" />
+  <project path="external/json-c" name="platform/external/json-c" remote="caf_system" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="platform/vendor/codeaurora/telephony" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform/vendor/qcom-opensource/display-commonsys-intf" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="platform/vendor/qcom-opensource/audio" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="platform/vendor/qcom-opensource/bluetooth_ext" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="platform/vendor/qcom-opensource/display-commonsys" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/dpm" name="platform/vendor/qcom-opensource/dpm-commonsys" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform/vendor/qcom-opensource/system/bt" remote="caf_system" />
+  <project path="vendor/qcom/opensource/interfaces" name="ChaptSpace/android_vendor_qcom_opensource_interfaces" remote="github" revision="sc-v2" />
+
+  <!-- CAF Vendor -->
+  <project path="hardware/qcom-caf/wlan" name="platform/hardware/qcom/wlan" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform/vendor/qcom-opensource/dataservices" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/dpm" name="platform/vendor/qcom-opensource/dpm" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/power" name="platform/vendor/qcom-opensource/power" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="platform/vendor/qcom-opensource/thermal-engine" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/usb" name="platform/vendor/qcom-opensource/usb" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/vibrator" name="platform/vendor/qcom-opensource/vibrator" remote="caf_vendor" />
+
+  <!-- CAF Kernel Build -->
+  <project name="AOSPA/android_kernel_build" path="device/qcom/kernelscripts" remote="github" revision="sapphire">
+    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk" />
+  </project>
+
+  <!-- Sepolicy -->
+  <project path="device/proton/sepolicy" name="ChaptSpace/android_device_proton_sepolicy" remote="github" revision="sc-v2" />
+  <project path="device/qcom/sepolicy" name="ChaptSpace/android_device_qcom_sepolicy" remote="github" revision="sc-v2" />
+  <project path="device/qcom/sepolicy_vndr" name="ChaptSpace/android_device_qcom_sepolicy_vndr" remote="github" revision="sc-v2" />
+
+  <!-- SM8250 HALs -->
+  <project path="hardware/qcom/display" name="ChaptSpace/android_hardware_qcom_display" remote="github" revision="sc-v2" />
+  <project path="hardware/qcom/media" name="ChaptSpace/android_hardware_qcom_media" remote="github" revision="sc-v2" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="ChaptSpace/android_hardware_qcom_audio" remote="github" revision="sc-v2" />
+</manifest>
