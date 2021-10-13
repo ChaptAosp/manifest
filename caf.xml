@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="caf_system"
+          fetch="https://source.codeaurora.org/quic/la"
+          review="codeaurora.org"
+          revision="refs/tags/LA.QSSI.12.0.r1-06300-qssi.0" />
+
+  <remote name="caf_vendor"
+          fetch="https://source.codeaurora.org/quic/la"
+          review="codeaurora.org"
+          revision="refs/tags/LA.UM.9.12.r1-14000-SMxx50.0" />
+
+  <!-- Unnecessary Stuff -->
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/google/bonito" />
+  <remove-project name="device/google/bonito-kernel" />
+  <remove-project name="device/google/bonito-sepolicy" />
+  <remove-project name="device/google/barbet" />
+  <remove-project name="device/google/barbet-sepolicy" />
+  <remove-project name="device/google/barbet-kernel" />
+  <remove-project name="device/google/bramble-sepolicy" />
+  <remove-project name="android_device_google_coral-sepolicy"/>
+  <remove-project name="android_device_google_coral"/>
+  <remove-project name="android_device_google_redfin"/>
+  <remove-project name="android_device_google_redbull"/>
+  <remove-project name="android_device_google_redbull-sepolicy"/>
+  <remove-project name="android_device_google_bramble"/>
+  <remove-project name="device/google/coral-kernel" />
+  <remove-project name="device/generic/car" />
+  <remove-project name="device/google/redbull-kernel" />
+  <remove-project name="device/google/redfin-sepolicy" />
+  <remove-project name="device/google/sunfish" />
+  <remove-project name="device/google/sunfish-kernel" />
+  <remove-project name="device/google/sunfish-sepolicy" />
+  <remove-project name="device/google/crosshatch" />
+  <remove-project name="device/google/crosshatch-kernel" />
+  <remove-project name="device/google/crosshatch-sepolicy" />
+  <remove-project name="device/google/fuchsia" />
+  <remove-project name="device/google/trout" />
+  <remove-project name="device/google_car" />
+  <remove-project name="device/mediatek/wembley-sepolicy" />
+  <remove-project name="device/generic/trusty" />
+  <remove-project name="device/generic/uml" />
+  <remove-project name="device/linaro/dragonboard" />
+  <remove-project name="device/linaro/dragonboard-kernel" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/linaro/poplar" />
+  <remove-project name="device/linaro/poplar-kernel" />
+  <remove-project name="android_vendor_google" />
+  <remove-project name="device/ti/beagle-x15" />
+  <remove-project name="device/ti/beagle-x15-kernel" />
+  <remove-project name="device/amlogic/yukawa" />
+  <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="platform/hardware/broadcom/libbt" />
+  <remove-project name="platform/hardware/broadcom/wlan" />
+  <remove-project name="platform/hardware/invensense" />
+  <remove-project name="platform/hardware/knowles/athletico/sound_trigger_hal" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/bootctrl" />
+  <remove-project name="platform/hardware/qcom/bt" />
+  <remove-project name="platform/hardware/qcom/camera" />
+  <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/keymaster" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/hardware/qcom/msm8960" />
+  <remove-project name="platform/hardware/qcom/msm8994" />
+  <remove-project name="platform/hardware/qcom/msm8996" />
+  <remove-project name="platform/hardware/qcom/msm8x09" />
+  <remove-project name="platform/hardware/qcom/msm8x26" />
+  <remove-project name="platform/hardware/qcom/msm8x27" />
+  <remove-project name="platform/hardware/qcom/msm8x84" />
+  <remove-project name="platform/hardware/qcom/power" />
+  <remove-project name="platform/hardware/qcom/sdm845/bt" />
+  <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/sdm845/display" />
+  <remove-project name="platform/hardware/qcom/sdm845/gps" />
+  <remove-project name="platform/hardware/qcom/sdm845/media" />
+  <remove-project name="platform/hardware/qcom/sdm845/thermal" />
+  <remove-project name="platform/hardware/qcom/sdm845/vr" />
+  <remove-project name="platform/hardware/qcom/sm7150/gps" />
+  <remove-project name="platform/hardware/qcom/sm7250/gps" />
+  <remove-project name="android_hardware_qcom_sm8150_display"/>
+  <remove-project name="android_hardware_qcom_sm8150_data_ipacfg-mgr"/>
+  <remove-project name="android_hardware_qcom_sm8150_media"/>
+  <remove-project name="android_hardware_qcom_sm7250_display"/>
+  <remove-project name="android_hardware_qcom_sm7250_media"/>
+  <remove-project name="platform/hardware/qcom/sm8150/gps" />
+  <remove-project name="platform/hardware/qcom/sm8150/thermal" />
+  <remove-project name="platform/hardware/qcom/sm8150/vr" />
+  <remove-project name="platform/hardware/qcom/sm8150p/gps" />
+
+  <remove-project name="android_vendor_qcom_opensource_commonsys-intf_display" />
+  <remove-project name="android_vendor_qcom_opensource_core-utils" />
+  <remove-project name="android_vendor_qcom_opensource_interfaces" />
+  <remove-project name="android_vendor_qcom_opensource_thermal-engine" />
+
+  <!-- CAF System -->
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" remote="caf_system">
+    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/generate_vendor_bundle.mk" src="image_generation_tool/generate_vendor_bundle.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/image_generation_tool_product.mk" src="image_generation_tool/config/image_generation_tool_product.mk" />
+    <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk" />
+    <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk" />
+  </project>
+  <project path="device/qcom/qssi" name="device/qcom/qssi" remote="caf_system" />
+  <project path="external/json-c" name="platform/external/json-c" remote="caf_system" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="platform/vendor/codeaurora/telephony" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform/vendor/qcom-opensource/display-commonsys-intf" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="platform/vendor/qcom-opensource/audio" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="platform/vendor/qcom-opensource/bluetooth_ext" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="platform/vendor/qcom-opensource/display-commonsys" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/dpm" name="platform/vendor/qcom-opensource/dpm-commonsys" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform/vendor/qcom-opensource/system/bt" remote="caf_system" />
+  <project path="vendor/qcom/opensource/interfaces" name="ChaptSpace/android_vendor_qcom_opensource_interfaces" remote="github" revision="sc" />
+
+  <!-- CAF Vendor -->
+  <project path="hardware/qcom-caf/wlan" name="platform/hardware/qcom/wlan" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform/vendor/qcom-opensource/dataservices" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/dpm" name="platform/vendor/qcom-opensource/dpm" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/power" name="platform/vendor/qcom-opensource/power" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="platform/vendor/qcom-opensource/thermal-engine" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/usb" name="platform/vendor/qcom-opensource/usb" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/vibrator" name="platform/vendor/qcom-opensource/vibrator" remote="caf_vendor" />
+
+  <!-- CAF Kernel Build -->
+  <project name="AOSPA/android_kernel_build" path="device/qcom/kernelscripts" remote="github" revision="sapphire">
+    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk" />
+  </project>
+
+  <!-- Sepolicy -->
+  <project path="device/qcom/sepolicy" name="ChaptSpace/android_device_qcom_sepolicy" remote="github" revision="sc" />
+  <project path="device/qcom/sepolicy_vndr" name="ChaptSpace/android_device_qcom_sepolicy_vndr" remote="github" revision="sc" />
+
+  <!-- SM8250 HALs -->
+  <project path="hardware/qcom/display" name="ChaptSpace/android_hardware_qcom_display" remote="github" revision="sc" />
+  <project path="hardware/qcom/media" name="ChaptSpace/android_hardware_qcom_media" remote="github" revision="sc" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="ChaptSpace/android_hardware_qcom_audio" remote="github" revision="sc" />
+</manifest>
