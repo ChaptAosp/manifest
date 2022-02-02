@@ -84,4 +84,8 @@
   <remove-project name="android_vendor_qcom_opensource_core-utils" />
   <remove-project name="android_vendor_qcom_opensource_interfaces" />
   <remove-project name="android_vendor_qcom_opensource_thermal-engine" />
+
+  <!-- Prebuilts -->
+  <remove-project name="platform/prebuilts/android-emulator" />
+  <remove-project name="platform/prebuilts/qemu-kernel" />
 </manifest>
