@@ -137,6 +137,7 @@
   </project>
 
   <!-- Sepolicy -->
+  <project path="device/proton/sepolicy" name="ChaptSpace/android_device_proton_sepolicy" remote="github" revision="sc" />
   <project path="device/qcom/sepolicy" name="ChaptSpace/android_device_qcom_sepolicy" remote="github" revision="sc" />
   <project path="device/qcom/sepolicy_vndr" name="ChaptSpace/android_device_qcom_sepolicy_vndr" remote="github" revision="sc" />
 
