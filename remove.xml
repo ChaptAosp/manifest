@@ -88,4 +88,7 @@
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/android-emulator" />
   <remove-project name="platform/prebuilts/qemu-kernel" />
+
+  <!-- External -->
+  <remove-project name="platform/external/tinycompress" />
 </manifest>
