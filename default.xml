@@ -1106,6 +1106,7 @@
   <!-- ProtonAOSP changes -->
   <include name="proton.xml"/>
 
-  <!-- CAF repos -->
+  <!-- ChaptSpace -->
+  <include name="remove.xml"/>
   <include name="caf.xml"/>
 </manifest>
