@@ -17,14 +17,14 @@
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="platform/vendor/nxp/opensource/frameworks" remote="caf_system" />
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform/vendor/nxp/opensource/packages/apps/Nfc" remote="caf_system" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="platform/vendor/nxp/interfaces/opensource/nfc" remote="caf_system" />
-  <project path="vendor/qcom/opensource/core-utils" name="platform/vendor/qcom-opensource/core-utils" remote="caf_system" />
+  <project path="vendor/qcom/opensource/core-utils" name="ChaptSpace/android_vendor_qcom-opensource_core-utils" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" remote="caf_system" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform/vendor/qcom-opensource/display-commonsys-intf" remote="caf_system" />
   <project path="vendor/qcom/opensource/commonsys/audio" name="platform/vendor/qcom-opensource/audio" remote="caf_system" />
-  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="platform/vendor/qcom-opensource/bluetooth_ext" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="ChaptSpace/android_vendor_qcom_opensource_bluetooth_ext" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/commonsys/display" name="ChaptSpace/android_vendor_qcom_opensource_commonsys_display" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/commonsys/dpm" name="platform/vendor/qcom-opensource/dpm-commonsys" remote="caf_system" />
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="ChaptSpace/android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform/vendor/qcom-opensource/system/bt" remote="caf_system" />
   <project path="vendor/qcom/opensource/interfaces" name="ChaptSpace/android_vendor_qcom_opensource_interfaces" remote="github" revision="sc" />
 
@@ -33,12 +33,12 @@
   <project path="hardware/qcom/wlan" name="ChaptSpace/android_hardware_qcom_wlan" remote="github" revision="sc" />
   <project path="vendor/nxp/opensource/halimpl" name="platform/vendor/nxp/opensource/halimpl" remote="caf_vendor" />
   <project path="vendor/nxp/opensource/hidlimpl" name="platform/vendor/nxp/opensource/hidlimpl" remote="caf_vendor" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" remote="caf_vendor" />
-  <project path="vendor/qcom/opensource/dataservices" name="platform/vendor/qcom-opensource/dataservices" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="ChaptSpace/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="sc" />
+  <project path="vendor/qcom/opensource/dataservices" name="ChaptSpace/android_vendor_qcom_opensource_dataservices" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/dpm" name="platform/vendor/qcom-opensource/dpm" remote="caf_vendor" />
   <project path="vendor/qcom/opensource/power" name="ChaptSpace/android_vendor_qcom_opensource_power" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/thermal-engine" name="platform/vendor/qcom-opensource/thermal-engine" remote="caf_vendor" />
-  <project path="vendor/qcom/opensource/usb" name="platform/vendor/qcom-opensource/usb" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/usb" name="ChaptSpace/android_vendor_qcom_opensource_usb" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/vibrator" name="ChaptSpace/android_vendor_qcom-opensource_vibrator" remote="github" revision="sc" />
 
   <!-- External -->
